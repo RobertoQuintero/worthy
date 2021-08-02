@@ -1,0 +1,27 @@
+GET https://flutter-varios-b3dfc-default-rtdb.firebaseio.com/catalogo/almacen.json
+
+
+###
+POST https://flutter-varios-b3dfc-default-rtdb.firebaseio.com/catalogo/almacen.json
+Content-Type: application/json
+
+{
+  "id":"30",
+  "sector":"Disciplina",
+  "area":"Almacén",
+  "verification_item":"Evolución",
+  "description":"El área puede mostrar una evolución en los resultados de 5S"
+}
+
+###
+
+GET https://flutter-varios-b3dfc-default-rtdb.firebaseio.com/catalogo/almacen.json?orderBy="sector"&equalTo="Disciplina"
+
+
+{
+  "audit_id":"1a-asa",
+  "area":"almacen",
+  "all_ok":true,
+  "success_registers":12,
+  "date":"2021-07-12T23:12:01.333+00:00",
+}
